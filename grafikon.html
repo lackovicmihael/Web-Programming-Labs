@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Meta tag za SEO i pristupačnost -->
+    <meta name="description" content="CSS-only grafikon distribucije žanrova filmova">
+    <title>Grafikon žanrova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dinamička navigacija -->
+    <header>
+        <h1>Grafikon žanrova</h1>
+        <label for="menu-toggle" class="menu-label">☰</label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <nav aria-label="Glavna navigacija">
+            <ul class="nav-menu">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="grafikon.html">Grafikon</a></li>
+                <li><a href="slike.html">Galerija</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Distribucija žanrova</h2>
+            <!-- CSS-only pie chart -->
+            <div class="pie-chart" aria-label="Pie chart distribucije žanrova"></div>
+
+            <ul class="legend">
+                <li style="color:#e50914">● Drama — 40%</li>
+                <li style="color:#f59e0b">● Komedija — 25%</li>
+                <li style="color:#22c55e">● Akcija — 15%</li>
+                <li style="color:#06b67f">● Animacija — 12%</li>
+                <li style="color:#a78bfa">● Ostalo — 8%</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Web Programiranje. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>
