@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerija filmskih plakata - responsive grid">
+    <title>Galerija plakata</title>
+    
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style/style_slike.css">
+</head>
+<body>
+
+<header>
+    <h1>Galerija filmskih plakata</h1>
+    <label for="menu-toggle" class="menu-label">☰</label>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <nav aria-label="Glavna navigacija">
+        <ul class="nav-menu">
+            <li><a href="/">Početna</a></li>
+            <li><a href="/grafikon.html">Grafikon</a></li>
+            <li><a href="/slike">Galerija</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="galerija">
+
+        <% images.forEach(image => { %>
+            <figure class="galerija_slika">
+                <a href="<%= image.url %>" target="_blank">
+                    <img src="<%= image.url %>" alt="<%= image.title %>">
+                </a>
+                <figcaption><%= image.title %></figcaption>
+            </figure>
+        <% }) %>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025. Web Programiranje. Sva prava pridržana.</p>
+</footer>
+
+</body>
+</html>
