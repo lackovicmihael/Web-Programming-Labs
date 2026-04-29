@@ -220,3 +220,50 @@ footer {
     text-align: center;
     font-size: 0.95rem;
 }
+
+#filteri {
+  margin-bottom: 20px;
+}
+
+#kosarica {
+  position: fixed;
+  right: 20px;
+  top: 120px;
+  width: 260px;
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+
+  /* FIX */
+  color: #000;
+}
+
+#kosarica h2 {
+  color: #000;
+}
+
+#lista-kosarice li {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+/* gumb u kosarici */
+#kosarica button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+#kosarica button:hover {
+  background: #555;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
